@@ -8,7 +8,16 @@
     <h1>Memory Game</h1>
 </div>
 
-<div class="container-fluid text-center">
+<div class="container-fluid text-center mb-5">
     <h2 class="display-4">Welcome @Model.UserName</h2>
     <h3>Let's test your memory!</h3>
+</div>
+
+<div class="deck">
+    @foreach (var card in Model.Cards)
+    {
+        <div class="memory-card">
+            <p>@card.Value</p>
+        </div>
+    }
 </div>

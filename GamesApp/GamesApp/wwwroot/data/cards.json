@@ -1,0 +1,42 @@
+﻿[
+  {
+    "Image": "",
+    "Value": "Bike",
+    "Code": "b1"
+  },
+  {
+    "Image": "",
+    "Value": "Bike",
+    "Code": "b2"
+  },
+  {
+    "Image": "",
+    "Value": "Car",
+    "Code": "c1"
+  },
+  {
+    "Image": "",
+    "Value": "Car",
+    "Code": "c2"
+  },
+  {
+    "Image": "",
+    "Value": "Plane",
+    "Code": "p1"
+  },
+  {
+    "Image": "",
+    "Value": "Plane",
+    "Code": "p2"
+  },
+  {
+    "Image": "",
+    "Value": "Train",
+    "Code": "t1"
+  },
+  {
+    "Image": "",
+    "Value": "Train",
+    "Code": "t2"
+  }
+]

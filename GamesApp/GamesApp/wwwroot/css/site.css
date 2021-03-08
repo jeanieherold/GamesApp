@@ -71,3 +71,23 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+/* Memory Card styles
+-------------------------------------------------- */
+.deck {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border: 2px solid #eaeaea;
+}
+
+.memory-card {
+    width: 100px;
+    height: 100px;
+    margin: 1%;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    align-items: center;
+    color: rebeccapurple;
+}
