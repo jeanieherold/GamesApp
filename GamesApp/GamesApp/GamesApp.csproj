@@ -10,5 +10,6 @@
   <ItemGroup>
     <Folder Include="wwwroot\data\" />
     <Folder Include="Services\" />
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
 </Project>

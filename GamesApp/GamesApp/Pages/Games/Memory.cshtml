@@ -16,8 +16,9 @@
 <div class="deck">
     @foreach (var card in Model.Cards)
     {
-        <div class="memory-card">
+        <div class="card memory-card">
             <p>@card.Value</p>
+            <img src="@card.BackImage" />
         </div>
     }
 </div>

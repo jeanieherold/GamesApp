@@ -83,11 +83,25 @@ body {
 }
 
 .memory-card {
-    width: 100px;
-    height: 100px;
+    position: relative;
+    width: 20%;
+    max-width: 23%;
     margin: 1%;
     border-radius: 5px;
     background-color: #eaeaea;
     align-items: center;
-    color: rebeccapurple;
+    color: mediumvioletred;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.memory-card img {
+    width: 100%;
+}
+
+.memory-card p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

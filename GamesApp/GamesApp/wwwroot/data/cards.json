@@ -1,42 +1,98 @@
 ﻿[
   {
-    "Image": "",
-    "Value": "Bike",
-    "Code": "b1"
+    "FrontImage": "",
+    "BackImage": "../img/city.png",
+    "Value": "City",
+    "Code": "1a"
   },
   {
-    "Image": "",
-    "Value": "Bike",
-    "Code": "b2"
+    "FrontImage": "",
+    "BackImage": "../img/city.png",
+    "Value": "City",
+    "Code": "1b"
   },
   {
-    "Image": "",
-    "Value": "Car",
-    "Code": "c1"
+    "FrontImage": "",
+    "BackImage": "../img/flower.png",
+    "Value": "Flower",
+    "Code": "2a"
   },
   {
-    "Image": "",
-    "Value": "Car",
-    "Code": "c2"
+    "FrontImage": "",
+    "BackImage": "../img/flower.png",
+    "Value": "Flower",
+    "Code": "2b"
   },
   {
-    "Image": "",
-    "Value": "Plane",
-    "Code": "p1"
+    "FrontImage": "",
+    "BackImage": "../img/shield.png",
+    "Value": "Shield",
+    "Code": "3a"
   },
   {
-    "Image": "",
-    "Value": "Plane",
-    "Code": "p2"
+    "FrontImage": "",
+    "BackImage": "../img/shield.png",
+    "Value": "Shield",
+    "Code": "3b"
   },
   {
-    "Image": "",
-    "Value": "Train",
-    "Code": "t1"
+    "FrontImage": "",
+    "BackImage": "../img/star.png",
+    "Value": "Star",
+    "Code": "4a"
   },
   {
-    "Image": "",
-    "Value": "Train",
-    "Code": "t2"
+    "FrontImage": "",
+    "BackImage": "../img/star.png",
+    "Value": "Star",
+    "Code": "4b"
+  },
+  {
+    "FrontImage": "",
+    "BackImage": "../img/sun.png",
+    "Value": "Sun",
+    "Code": "5a"
+  },
+  {
+    "FrontImage": "",
+    "BackImage": "../img/sun.png",
+    "Value": "Sun",
+    "Code": "5b"
+  },
+  {
+    "FrontImage": "",
+    "BackImage": "../img/tri-flor.png",
+    "Value": "Tri-Flower",
+    "Code": "6a"
+  },
+  {
+    "FrontImage": "",
+    "BackImage": "../img/tri-flor.png",
+    "Value": "Tri-Flower",
+    "Code": "6b"
+  },
+  {
+    "FrontImage": "",
+    "BackImage": "../img/yel-bl-hex.png",
+    "Value": "Hex",
+    "Code": "7a"
+  },
+  {
+    "FrontImage": "",
+    "BackImage": "../img/yel-bl-hex.png",
+    "Value": "Hex",
+    "Code": "7b"
+  },
+  {
+    "FrontImage": "",
+    "BackImage": "../img/or-gr-env.png",
+    "Value": "GoGreen",
+    "Code": "8a"
+  },
+  {
+    "FrontImage": "",
+    "BackImage": "../img/or-gr-env.png",
+    "Value": "GoGreen",
+    "Code": "8b"
   }
 ]
