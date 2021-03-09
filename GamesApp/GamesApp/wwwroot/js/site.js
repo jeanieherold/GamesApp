@@ -5,10 +5,10 @@
 
 $(document).ready(function () {
 
-    var cardwidth = $('.faces img').width();
+    var cardwidth = $('.faces').width();
     $('.faces').css({ 'height': cardwidth + 'px' });
 
-    let wrapper = document.querySelector(".wrapper");
+    let wrapper = document.querySelector(".deck");
     let parentCard = document.querySelector(".memory-card");
 
     let cards = gsap.utils.toArray(".memory-card > .faces");

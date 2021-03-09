@@ -81,6 +81,7 @@ body {
     flex-wrap: wrap;
     padding: 1rem;
     border: 2px solid #eaeaea;
+    visibility: hidden;
 }
 
 .memory-card {
