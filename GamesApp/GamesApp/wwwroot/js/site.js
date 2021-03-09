@@ -5,9 +5,6 @@
 
 $(document).ready(function () {
 
-    var cardwidth = $('.faces').width();
-    $('.faces').css({ 'height': cardwidth + 'px' });
-
     let wrapper = document.querySelector(".deck");
     let parentCard = document.querySelector(".memory-card");
 
@@ -28,5 +25,6 @@ $(document).ready(function () {
 
     gsap.set(wrapper, { autoAlpha: 1 });
     gsap.from(".memory-card", { opacity: 0, stagger: 0.2 });
+
 });
 

@@ -4,16 +4,16 @@
     ViewData["Title"] = "Memory Game";
 }
 
-<div class="container-fluid mb-2 pt-3">
-    <h1>Memory Game</h1>
+<div class="container-fluid mb-3 pt-3">
+    <h2 class="display-4 text-center">Memory Game</h2>
 </div>
 
-<div class="container-fluid text-center mb-5">
-    <h2 class="display-4">Welcome @Model.UserName</h2>
-    <h3>Let's test your memory!</h3>
+<div class="container-fluid text-center mb-0">
+    <h3>Welcome @Model.UserName</h3>
+    <p class="mb-0">Let's test your memory.</p>
 </div>
 
-<div class="wrapper deck mb-5">
+<div class="container-fluid wrapper deck mb-5">
     @foreach (var card in Model.Cards)
     {
         <div class="memory-card">
