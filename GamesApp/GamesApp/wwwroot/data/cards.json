@@ -1,97 +1,81 @@
 ﻿[
   {
-    "FrontImage": "",
-    "BackImage": "../img/city.png",
+    "FrontImage": "../img/city.png",
     "Value": "City",
     "Code": "1a"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/city.png",
+    "FrontImage": "../img/city.png",
     "Value": "City",
     "Code": "1b"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/flower.png",
+    "FrontImage": "../img/flower.png",
     "Value": "Flower",
     "Code": "2a"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/flower.png",
+    "FrontImage": "../img/flower.png",
     "Value": "Flower",
     "Code": "2b"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/shield.png",
+    "FrontImage": "../img/shield.png",
     "Value": "Shield",
     "Code": "3a"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/shield.png",
+    "FrontImage": "../img/shield.png",
     "Value": "Shield",
     "Code": "3b"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/star.png",
+    "FrontImage": "../img/star.png",
     "Value": "Star",
     "Code": "4a"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/star.png",
+    "FrontImage": "../img/star.png",
     "Value": "Star",
     "Code": "4b"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/sun.png",
+    "FrontImage": "../img/sun.png",
     "Value": "Sun",
     "Code": "5a"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/sun.png",
+    "FrontImage": "../img/sun.png",
     "Value": "Sun",
     "Code": "5b"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/tri-flor.png",
+    "FrontImage": "../img/tri-flor.png",
     "Value": "Tri-Flower",
     "Code": "6a"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/tri-flor.png",
+    "FrontImage": "../img/tri-flor.png",
     "Value": "Tri-Flower",
     "Code": "6b"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/yel-bl-hex.png",
+    "FrontImage": "../img/yel-bl-hex.png",
     "Value": "Hex",
     "Code": "7a"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/yel-bl-hex.png",
+    "FrontImage": "../img/yel-bl-hex.png",
     "Value": "Hex",
     "Code": "7b"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/or-gr-env.png",
+    "FrontImage": "../img/or-gr-env.png",
     "Value": "GoGreen",
     "Code": "8a"
   },
   {
-    "FrontImage": "",
-    "BackImage": "../img/or-gr-env.png",
+    "FrontImage": "../img/or-gr-env.png",
     "Value": "GoGreen",
     "Code": "8b"
   }

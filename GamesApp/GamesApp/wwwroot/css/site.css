@@ -76,6 +76,7 @@ body {
 -------------------------------------------------- */
 .deck {
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem;
@@ -86,22 +87,43 @@ body {
     position: relative;
     width: 20%;
     max-width: 23%;
-    margin: 1%;
     border-radius: 5px;
-    background-color: #eaeaea;
-    align-items: center;
-    color: mediumvioletred;
+    background-color: transparent;
     font-size: 1rem;
     cursor: pointer;
+    margin: 1.5%;
+    perspective: 600px;
 }
 
-.memory-card img {
+.faces {
+    position: relative;
     width: 100%;
 }
 
-.memory-card p {
+.face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    backface-visibility: hidden;
+}
+
+.face > * {
+    backface-visibility: hidden;
+}
+
+.front {
+    background: transparent;
+    /*added for mobile browsers*/
+    transform: translateZ(1px);
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-image: url('../img/back.jpg');
+}
+
+.face img {
+    width: 100%;
+    border-radius: 10px;
 }
