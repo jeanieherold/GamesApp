@@ -9,18 +9,26 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-    color: #dd8683;
+    color: #c4d7d1;
 }
 
-    a:hover {
-        color: #c4d7d1;
-    }
+a:hover {
+    color: #dd8683;
+}
 
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+.navbar li.nav-item a.nav-link {
+    color: #c4d7d1;
+}
+
+    .navbar li.nav-item a.nav-link:hover {
+        color: #2d3749;
+    }
 
 .navbar .navbar-brand {
     color: #c4d7d1;
@@ -40,11 +48,10 @@ a {
         color: #2d3749;
     }
 
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 @media (min-width: 768px) {
   html {
