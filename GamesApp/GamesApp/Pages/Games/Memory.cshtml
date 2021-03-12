@@ -4,8 +4,9 @@
     ViewData["Title"] = "Memory Game";
 }
 
-<div class="container-fluid mb-3 pt-3">
-    <h2 class="display-4 text-center">Memory Game</h2>
+<div class="container-fluid mb-3 pt-3 text-center">
+    <p>C# Memory Game - WIP</p>
+    <h2 class="display-4">Memory Game</h2>
 </div>
 
 <div class="container-fluid text-center mb-0">
@@ -14,6 +15,7 @@
 </div>
 
 <div class="container-fluid wrapper deck mb-5">
+    
     @foreach (var card in Model.Cards)
     {
         <div class="memory-card">

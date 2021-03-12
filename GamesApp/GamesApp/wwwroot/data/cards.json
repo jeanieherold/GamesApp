@@ -2,81 +2,97 @@
   {
     "FrontImage": "../img/city.png",
     "Value": "City",
-    "Code": "1a"
+    "Code": "1a",
+    "Order": 1
   },
   {
     "FrontImage": "../img/city.png",
     "Value": "City",
-    "Code": "1b"
+    "Code": "1b",
+    "Order":  90
   },
   {
     "FrontImage": "../img/flower.png",
     "Value": "Flower",
-    "Code": "2a"
+    "Code": "2a",
+    "Order":  22
   },
   {
     "FrontImage": "../img/flower.png",
     "Value": "Flower",
-    "Code": "2b"
+    "Code": "2b",
+    "Order": 33
   },
   {
     "FrontImage": "../img/shield.png",
     "Value": "Shield",
-    "Code": "3a"
+    "Code": "3a",
+    "Order": 17
   },
   {
     "FrontImage": "../img/shield.png",
     "Value": "Shield",
-    "Code": "3b"
+    "Code": "3b",
+    "Order": 87
   },
   {
     "FrontImage": "../img/star.png",
     "Value": "Star",
-    "Code": "4a"
+    "Code": "4a",
+    "Order": 8
   },
   {
     "FrontImage": "../img/star.png",
     "Value": "Star",
-    "Code": "4b"
+    "Code": "4b",
+    "Order": 55
   },
   {
     "FrontImage": "../img/sun.png",
     "Value": "Sun",
-    "Code": "5a"
+    "Code": "5a",
+    "Order": 43
   },
   {
     "FrontImage": "../img/sun.png",
     "Value": "Sun",
-    "Code": "5b"
+    "Code": "5b",
+    "Order": 7
   },
   {
     "FrontImage": "../img/tri-flor.png",
     "Value": "Tri-Flower",
-    "Code": "6a"
+    "Code": "6a",
+    "Order": 3
   },
   {
     "FrontImage": "../img/tri-flor.png",
     "Value": "Tri-Flower",
-    "Code": "6b"
+    "Code": "6b",
+    "Order": 31
   },
   {
     "FrontImage": "../img/yel-bl-hex.png",
     "Value": "Hex",
-    "Code": "7a"
+    "Code": "7a",
+    "Order": 37
   },
   {
     "FrontImage": "../img/yel-bl-hex.png",
     "Value": "Hex",
-    "Code": "7b"
+    "Code": "7b",
+    "Order": 77
   },
   {
     "FrontImage": "../img/or-gr-env.png",
     "Value": "GoGreen",
-    "Code": "8a"
+    "Code": "8a",
+    "Order": 5
   },
   {
     "FrontImage": "../img/or-gr-env.png",
     "Value": "GoGreen",
-    "Code": "8b"
+    "Code": "8b",
+    "Order": 99
   }
 ]

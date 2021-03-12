@@ -39,8 +39,14 @@ namespace GamesApp.Pages.Games
             {
                 UserName = "Gamer!";
             }
+            
+            Cards = CardService.GetCards().OrderBy(card => card.Order);
+            var random = new Random();
 
-            Cards = CardService.GetCards();
+            foreach(var card in Cards)
+            {
+                card.Order = random.Next(100);
+            }
         }
 
 
