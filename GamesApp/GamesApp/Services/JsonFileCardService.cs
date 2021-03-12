@@ -19,7 +19,7 @@ namespace GamesApp.Services
 
         private string JsonFileName
         {
-            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "cards.json"); }
+            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "beginnercardset.json"); }
         }
 
         //using IEnumerable so I can loop over 

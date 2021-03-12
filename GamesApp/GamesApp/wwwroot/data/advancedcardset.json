@@ -1,0 +1,196 @@
+[
+    {
+      "FrontImage": "../img/monster-aqua.jpg",
+      "Value": "Aqua",
+      "Code": "2a",
+      "Order":  3
+    },
+    {
+      "FrontImage": "../img/monster-aqua.jpg",
+      "Value": "Aqua",
+      "Code": "2b",
+      "Order": 4
+    },
+    {
+      "FrontImage": "../img/monster-bailey-blue-furry.jpg",
+      "Value": "BaileyBlueFurry",
+      "Code": "3a",
+      "Order": 5
+    },
+    {
+      "FrontImage": "../img/monster-bailey-blue-furry.jpg",
+      "Value": "BaileyBlueFurry",
+      "Code": "3b",
+      "Order": 6
+    },
+    {
+      "FrontImage": "../img/monster-bailey-blue.jpg",
+      "Value": "BaileyBlue",
+      "Code": "4a",
+      "Order": 7
+    },
+    {
+      "FrontImage": "../img/monster-bailey-blue.jpg",
+      "Value": "BaileyBlue",
+      "Code": "4b",
+      "Order": 8
+    },
+    {
+      "FrontImage": "../img/monster-carribean-blue-furry.jpg",
+      "Value": "CarribeanBlueFurry",
+      "Code": "5a",
+      "Order": 9
+    },
+    {
+      "FrontImage": "../img/monster-carribean-blue-furry.jpg",
+      "Value": "CarribeanBlueFurry",
+      "Code": "5b",
+      "Order": 10
+    },
+    {
+      "FrontImage": "../img/monster-golden-furry.jpg",
+      "Value": "GoldenFurry",
+      "Code": "6a",
+      "Order": 11
+    },
+    {
+      "FrontImage": "../img/monster-golden-furry.jpg",
+      "Value": "GoldenFurry",
+      "Code": "6b",
+      "Order": 12
+    },
+    {
+      "FrontImage": "../img/monster-golden.jpg",
+      "Value": "Golden",
+      "Code": "7a",
+      "Order": 13
+    },
+    {
+      "FrontImage": "../img/monster-golden.jpg",
+      "Value": "Golden",
+      "Code": "7b",
+      "Order": 14
+    },
+    {
+      "FrontImage": "../img/monster-grass-green-furry.jpg",
+      "Value": "GrassGreenFurry",
+      "Code": "8a",
+      "Order": 15
+    },
+    {
+      "FrontImage": "../img/monster-grass-green-furry.jpg",
+      "Value": "GrassGreenFurry",
+      "Code": "8b",
+      "Order": 16
+    },
+    {
+      "FrontImage": "../img/monster-OHrange.jpg",
+      "Value": "Ohrange",
+      "Code": "9a",
+      "Order": 17
+    },
+    {
+      "FrontImage": "../img/monster-OHrange.jpg",
+      "Value": "Ohrange",
+      "Code": "9b",
+      "Order": 18
+    },
+    {
+      "FrontImage": "../img/monster-orange-furry.jpg",
+      "Value": "OrangeFurry",
+      "Code": "10a",
+      "Order": 19
+    },
+    {
+      "FrontImage": "../img/monster-orange-furry.jpg",
+      "Value": "OrangeFurry",
+      "Code": "10b",
+      "Order": 20
+    },
+    {
+      "FrontImage": "../img/monster-perfect-purple-furry.jpg",
+      "Value": "PerfectPurpleFurry",
+      "Code": "11a",
+      "Order": 21
+    },
+    {
+      "FrontImage": "../img/monster-perfect-purple-furry.jpg",
+      "Value": "PerfectPurpleFurry",
+      "Code": "11b",
+      "Order": 22
+    },
+    {
+      "FrontImage": "../img/monster-petunia-pink-furry.jpg",
+      "Value": "PinkFurry",
+      "Code": "12a",
+      "Order": 23
+    },
+    {
+      "FrontImage": "../img/monster-petunia-pink-furry.jpg",
+      "Value": "PinkFurry",
+      "Code": "12b",
+      "Order": 24
+    },
+    {
+      "FrontImage": "../img/monster-plum-purple-furry.jpg",
+      "Value": "PlumFurry",
+      "Code": "14a",
+      "Order": 27
+    },
+    {
+      "FrontImage": "../img/monster-plum-purple-furry.jpg",
+      "Value": "PlumFurry",
+      "Code": "14b",
+      "Order": 28
+    },
+    {
+      "FrontImage": "../img/monster-poolball-green.jpg",
+      "Value": "PoolBallGreen",
+      "Code": "15a",
+      "Order": 29
+    },
+    {
+      "FrontImage": "../img/monster-poolball-green.jpg",
+      "Value": "PoolBallGreen",
+      "Code": "15b",
+      "Order": 30
+    },
+    {
+      "FrontImage": "../img/monster-purple.jpg",
+      "Value": "Purple",
+      "Code": "16a",
+      "Order": 31
+    },
+    {
+      "FrontImage": "../img/monster-purple.jpg",
+      "Value": "Purple",
+      "Code": "16b",
+      "Order": 32
+    },
+    {
+      "FrontImage": "../img/monster-red.jpg",
+      "Value": "Red",
+      "Code": "17a",
+      "Order": 33
+    },
+    {
+      "FrontImage": "../img/monster-red.jpg",
+      "Value": "Red",
+      "Code": "17b",
+      "Order": 34
+    },
+    {
+      "FrontImage": "../img/monster-sea-green-furry.jpg",
+      "Value": "SeaGreenFurry",
+      "Code": "18a",
+      "Order": 35
+    },
+    {
+      "FrontImage": "../img/monster-sea-green-furry.jpg",
+      "Value": "SeaGreenFurry",
+      "Code": "18b",
+      "Order": 36
+    }
+
+  ]
+  
