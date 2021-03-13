@@ -78,6 +78,14 @@ h2 {
     color: #c4d7d1;
 }
 
+
+/* SignIn Form styles
+-------------------------------------------------- */
+.sign-in-form {
+    margin: 0 auto;
+}
+
+
 /* Memory Card styles
 -------------------------------------------------- */
 .deck {

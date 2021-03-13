@@ -27,7 +27,7 @@ namespace GamesApp.Pages
 
         //properties
         [BindProperty]
-        public PlayerModel Player { get; set; }
+        public Player Player { get; set; }
 
         //dont pass data directly using get or post - use properties as above
         //get - when you want to show the page but not post anything to it

@@ -34,6 +34,11 @@ namespace GamesApp.Services
                     });
             }
         }
+
+        public void CheckMatch(string cardValueA, string cardValueB)
+        {
+            var cards = GetCards();
+        }
         
 
     }

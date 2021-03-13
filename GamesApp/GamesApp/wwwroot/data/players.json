@@ -1,6 +1,7 @@
-﻿{
-  "id": "1",
-  "fname": "Jeanie",
-  "lname": "Herold",
-  "username": "jeanieherold"
-}
+﻿[
+  {
+    "Id": "1",
+    "Username": "jeanieherold",
+    "Score": 0
+  }
+]

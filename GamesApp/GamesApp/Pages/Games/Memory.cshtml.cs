@@ -29,7 +29,7 @@ namespace GamesApp.Pages.Games
         public string UserName { get; set; }
 
         [BindProperty]
-        public PlayerModel Player { get; set; }
+        public Player Player { get; set; }
 
         // get/post
         public void OnGet()

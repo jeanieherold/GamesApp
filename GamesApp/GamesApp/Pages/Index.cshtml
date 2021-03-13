@@ -4,27 +4,35 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center mb-5 pt-5">
+<div class="container text-center mb-5 pt-5">
     <p>C# Memory Game - WIP</p>
     <h1 class="display-4">Welcome @Model.UserName</h1>
 </div>
 
 <div class="container">
     <form method="post">
-        <div class="form-row mb-3">
-            <div class="col">
+        <div class="form-row justify-content-md-center mb-3">
+            <div class="col col-md-8 col-lg-6">
                 <input type="text" asp-for="Player.FirstName" class="form-control" placeholder="First name">
             </div>
-            <div class="col">
+        </div>
+        <div class="form-row justify-content-md-center mb-3">
+            <div class="col col-md-8 col-lg-6">
                 <input type="text" asp-for="Player.LastName" class="form-control" placeholder="Last name">
             </div>
         </div>
-        <div class="form-row mb-3">
-            <div class="col col-lg-6">
+        <div class="form-row justify-content-md-center mb-3">
+            <div class="col col-md-8 col-lg-6">
                 <input type="text" asp-for="Player.UserName" class="form-control" id="username" placeholder="My Username">
             </div>
         </div>
 
-        <button type="submit" class="btn btn-secondary">Sign in</button>
+        <div class="form-row justify-content-md-center mb-3">
+            <div class="col col-md-8 col-lg-6">
+                <button type="submit" class="btn btn-secondary">Sign in</button>
+            </div>
+        </div>
+
+        
     </form>
 </div>

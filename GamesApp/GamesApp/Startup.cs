@@ -31,6 +31,7 @@ namespace GamesApp
         {
             services.AddRazorPages();
             services.AddControllers();
+            services.AddTransient<JsonFilePlayerService>();
             services.AddTransient<JsonFileCardService>();
         }
 
@@ -58,7 +59,7 @@ namespace GamesApp
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
-                //we defined the route in the controller - for this one it is /cards
+                //we defined the route in the controller
                 endpoints.MapControllers();
 
             });
