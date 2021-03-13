@@ -1,7 +1,7 @@
 
-# csharp-matchgame
+# csharp-matchgame <Code>Louisville Project - Spring 2021
 
-## Using Razor pages (Pages, Models, Controllers, Data)
+## Using ASP.NET Razor Pages (Pages, Models, Controllers, Data)
 
 ## Published Site
 https://jh-memory-game.azurewebsites.net/
