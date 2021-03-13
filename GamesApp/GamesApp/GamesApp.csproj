@@ -12,5 +12,6 @@
     <Folder Include="Services\" />
     <Folder Include="wwwroot\img\" />
     <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 </Project>

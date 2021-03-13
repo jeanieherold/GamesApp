@@ -1,10 +1,15 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using GamesApp.Models;
 using GamesApp.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +30,7 @@ namespace GamesApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddControllers();
             services.AddTransient<JsonFileCardService>();
         }
 
@@ -52,6 +58,9 @@ namespace GamesApp
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                //we defined the route in the controller - for this one it is /cards
+                endpoints.MapControllers();
+
             });
         }
     }
