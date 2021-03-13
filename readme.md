@@ -10,22 +10,22 @@ https://jh-memory-game.azurewebsites.net/
     * front
     * back
     * 2 of each
-
-* Deck of matching pairs
+    * Cards Api : /cards
 
 * Player
-    * Player Name
+    * Player UserName
     * Player Score
+    * Players Api : /players
 
 * Board
     * Shuffle cards
     * Place on board grid
     * Keep high Score
-    * Read player user name
+    * Read player userName
     * Keep track of player score
 
 * Game Play
     * Start
-    * Remove cards when matched
+    * Remove or Dim cards when matched
     * Keep track of number of found matches
     * Win when all are matches are found

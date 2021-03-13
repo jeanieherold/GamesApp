@@ -35,37 +35,38 @@ namespace GamesApp.Services
             }
         }
 
-        //public void addPlayer(string playerId, string username, int score)
-        //{
-        //    var players = GetPlayers();
+        public void addPlayer(string playerId, string username, int score)
+        {
+            var players = GetPlayers();
 
-        //    var query = players.First(x => x.Id == playerId);
+            var query = players.First(x => x.Id == playerId);
 
-        //    if(query.UserName == null)
-        //    {
-        //        query.Id = playerId;
-        //        query.UserName = username;
-        //        query.Score = score;
-        //    } else
-        //    {
-        //        query.Score = score;
-        //    }
+            if (query.UserName == null)
+            {
+                query.Id = playerId;
+                query.UserName = username;
+                query.Score = score;
+            }
+            else
+            {
+                query.Score = score;
+            }
 
-        //    //this should prolly go in its own class or method but here for now
-        //    //want to write/update the json player file
+            //this should prolly go in its own class or method but here for now
+            //want to write/update the json player file
 
-        //    using(var outputStream = File.OpenWrite(JsonFileName))
-        //    {
-        //        JsonSerializer.Serialize<IEnumerable<Player>>(
-        //            new Utf8JsonWriter(outputStream, new JsonWriterOptions
-        //            {
-        //                SkipValidation = true,
-        //                Indented = true
-        //            }),
-        //            players
-        //        );
-        //    }
-        //}
+            using (var outputStream = File.OpenWrite(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<Player>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                    players
+                );
+            }
+        }
 
     }
 }
