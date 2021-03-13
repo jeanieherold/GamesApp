@@ -1,6 +1,8 @@
 
 # csharp-matchgame
 
+## Using Razor pages (Pages, Models, Controllers, Data)
+
 ## Published Site
 https://jh-memory-game.azurewebsites.net/
 
