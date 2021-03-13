@@ -1,7 +1,16 @@
-﻿[
+[
   {
     "Id": "1",
-    "Username": "jeanieherold",
-    "Score": 0
+    "FirstName": null,
+    "LastName": null,
+    "UserName": "jeanieherold",
+    "Score": 5
+  },
+  {
+    "Id": "2",
+    "FirstName": null,
+    "LastName": null,
+    "UserName": "redbaron",
+    "Score": 7
   }
 ]

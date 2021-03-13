@@ -32,5 +32,34 @@ namespace GamesApp.Controllers
             return PlayerService.GetPlayers();
         }
 
+        //Going to do a get that results in an action for my beginner level
+        //but technically should be a put or post etc
+        //[HttpPatch] "[FromBody]" - will learn this a bit later
+
+        //update player
+        [Route("update")]  //so this will be at /players/update
+        [HttpGet]
+        public ActionResult Get(
+                [FromQuery] string PlayerId,
+                [FromQuery] string Username,
+                [FromQuery] int Score
+            )
+        {
+            PlayerService.updatePlayer(PlayerId, Username, Score);
+            return Ok(); //return is a 200 ok and hides http from us
+        }
+
+        //update score
+        [Route("Score")]  //so this will be at /players/score
+        [HttpGet]
+        public ActionResult Get(
+                [FromQuery]  string PlayerId,
+                [FromQuery] int Score
+            )
+        {
+            PlayerService.updatePlayerScore(PlayerId, Score);
+            return Ok(); //return is a 200 ok and hides http from us
+        }
+
     }
 }

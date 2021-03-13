@@ -35,11 +35,33 @@ namespace GamesApp.Services
             }
         }
 
-        public void CheckMatch(string cardValueA, string cardValueB)
+        //update card.Order
+        public IEnumerable<Card> updateCardOrder()
         {
             var cards = GetCards();
+
+            var random = new Random();
+
+            foreach (var card in cards)
+            {
+                card.Order = random.Next(100);
+            }
+
+
+            using (var outputStream = File.OpenWrite(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<Card>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                    cards
+                );
+            }
+
+            return cards;
         }
-        
 
     }
 }

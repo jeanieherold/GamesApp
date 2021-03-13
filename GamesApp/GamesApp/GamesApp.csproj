@@ -13,5 +13,6 @@
     <Folder Include="wwwroot\img\" />
     <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Components\" />
   </ItemGroup>
 </Project>

@@ -30,6 +30,7 @@ namespace GamesApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddServerSideBlazor(); //application model
             services.AddControllers();
             services.AddTransient<JsonFilePlayerService>();
             services.AddTransient<JsonFileCardService>();
@@ -59,6 +60,7 @@ namespace GamesApp
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapBlazorHub(); //manages component comunications
                 //we defined the route in the controller
                 endpoints.MapControllers();
 

@@ -1,4 +1,5 @@
 ﻿@page
+@using GamesApp.Components
 @model GamesApp.Pages.Games.MemoryModel
 @{
     ViewData["Title"] = "Memory Game";
@@ -9,20 +10,11 @@
     <h2 class="display-4">Memory Game</h2>
 </div>
 
-<div class="container-fluid text-center mb-0">
-    <h3>Welcome @Model.UserName</h3>
-    <p class="mb-0">Let's test your memory.</p>
+<div class="container mb-2">
+    <div class="col col-lg-4"><p class="mb-1">Player One: @Model.UserName</p></div>
+    <div class="col col-lg-4"><p class="mb-0">Score: @Model.Score</p></div>
 </div>
 
-<div class="container-fluid wrapper deck mb-5">
-    
-    @foreach (var card in Model.Cards)
-    {
-        <div class="memory-card">
-            <div class="faces">
-                <div class="face front"><img src="@card.FrontImage" /></div>
-                <div class="face back"></div>
-            </div>
-        </div>
-    }
-</div>
+@(await Html.RenderComponentAsync<CardList>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazer.server.js"></script>

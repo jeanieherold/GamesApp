@@ -31,22 +31,18 @@ namespace GamesApp.Pages.Games
         [BindProperty]
         public Player Player { get; set; }
 
+        [BindProperty]
+        public int Score { get; set; }
+
         // get/post
         public void OnGet()
         {
             //change the following to get username from the api
             if (string.IsNullOrWhiteSpace(UserName))
             {
-                UserName = "Gamer!";
+                UserName = "You";
             }
-            
-            Cards = CardService.GetCards().OrderBy(card => card.Order);
-            var random = new Random();
 
-            foreach(var card in Cards)
-            {
-                card.Order = random.Next(100);
-            }
         }
 
 

@@ -35,7 +35,8 @@ namespace GamesApp.Services
             }
         }
 
-        public void addPlayer(string playerId, string username, int score)
+        //add players
+        public void updatePlayer(string playerId, string username, int score)
         {
             var players = GetPlayers();
 
@@ -43,8 +44,39 @@ namespace GamesApp.Services
 
             if (query.UserName == null)
             {
-                query.Id = playerId;
                 query.UserName = username;
+                query.Score = score;
+            }
+            else
+            {
+                query.Score = score;
+            }
+
+            //this should prolly go in its own class or method but here for now
+            //want to write/update the json player file
+
+            using (var outputStream = File.OpenWrite(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<Player>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                    players
+                );
+            }
+        }
+
+        //update player score
+        public void updatePlayerScore(string playerId, int score)
+        {
+            var players = GetPlayers();
+
+            var query = players.First(x => x.Id == playerId);
+
+            if (query.Id == null)
+            {
                 query.Score = score;
             }
             else
