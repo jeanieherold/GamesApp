@@ -4,41 +4,38 @@
 @using GamesApp.Services;
 @inject JsonFileCardService CardService;
 
+<div class="container">Card Value : @Message</div>
 <div class="container-fluid wrapper deck mb-5">
     @foreach (var card in CardService.GetCards().OrderBy(card => card.Order))
     {
-        <div class="memory-card" data-value="@card.Value" data-target="#cardModal" data-toggle="modal" @onclick="(e => SelectCard(card.Value, selectedCardVisibility))">
+        <div class="memory-card" data-value="@card.Value" data-target="#cardModal" data-toggle="modal" @onclick="(e => SelectCard(card))">
             <div class="faces">
-                <div class="@selectedCardVisibility"><img src="@card.FrontImage" /></div>
+                <div class="@card.Visible"><img src="@card.FrontImage" /></div>
                 <div class="face back backon"></div>
             </div>
         </div>
     }
+
 </div>
-
-
-@Message
 
 @code {
     string selectedCardValue;
-    string selectedCardVisibility = "face front hide";
     string Message { get; set; }
 
-    void SelectCard(string cardValue, string cardVisible)
+    void SelectCard(Card card)
     {
-        selectedCardValue = cardValue;
+        selectedCardValue = card.Value;
 
-        selectedCardVisibility = cardVisible;
 
-        Message = selectedCardValue + " " + cardVisible;
+        Message = selectedCardValue;
 
-        if(cardVisible == "face front hide")
+        if (card.Visible == "face front hide")
         {
-            selectedCardVisibility = "face front";
+            card.Visible = "face front";
         }
         else
         {
-            selectedCardVisibility = "face front hide";
+            card.Visible = "face front hide";
         }
     }
 }
