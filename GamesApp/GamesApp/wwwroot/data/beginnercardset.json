@@ -4,6 +4,7 @@
     "Code": "3a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-bailey-blue-furry.jpg",
+    "Visible": "face front hide",
     "Order": 21
   },
   {
@@ -11,6 +12,7 @@
     "Code": "3b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-bailey-blue-furry.jpg",
+    "Visible": "face front hide",
     "Order": 8
   },
   {
@@ -18,6 +20,7 @@
     "Code": "5a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-carribean-blue-furry.jpg",
+    "Visible": "face front hide",
     "Order": 85
   },
   {
@@ -25,6 +28,7 @@
     "Code": "5b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-carribean-blue-furry.jpg",
+    "Visible": "face front hide",
     "Order": 82
   },
   {
@@ -32,6 +36,7 @@
     "Code": "6a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-golden-furry.jpg",
+    "Visible": "face front hide",
     "Order": 2
   },
   {
@@ -39,6 +44,7 @@
     "Code": "6b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-golden-furry.jpg",
+    "Visible": "face front hide",
     "Order": 34
   },
   {
@@ -46,6 +52,7 @@
     "Code": "8a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-grass-green-furry.jpg",
+    "Visible": "face front hide",
     "Order": 2
   },
   {
@@ -53,6 +60,7 @@
     "Code": "8b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-grass-green-furry.jpg",
+    "Visible": "face front hide",
     "Order": 42
   },
   {
@@ -60,6 +68,7 @@
     "Code": "10a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-orange-furry.jpg",
+    "Visible": "face front hide",
     "Order": 51
   },
   {
@@ -67,6 +76,7 @@
     "Code": "10b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-orange-furry.jpg",
+    "Visible": "face front hide",
     "Order": 67
   },
   {
@@ -74,6 +84,7 @@
     "Code": "11a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-perfect-purple-furry.jpg",
+    "Visible": "face front hide",
     "Order": 77
   },
   {
@@ -81,6 +92,7 @@
     "Code": "11b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-perfect-purple-furry.jpg",
+    "Visible": "face front hide",
     "Order": 68
   },
   {
@@ -88,6 +100,7 @@
     "Code": "12a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-petunia-pink-furry.jpg",
+    "Visible": "face front hide",
     "Order": 48
   },
   {
@@ -95,6 +108,7 @@
     "Code": "12b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-petunia-pink-furry.jpg",
+    "Visible": "face front hide",
     "Order": 70
   },
   {
@@ -102,6 +116,7 @@
     "Code": "14a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-plum-purple-furry.jpg",
+    "Visible": "face front hide",
     "Order": 23
   },
   {
@@ -109,6 +124,7 @@
     "Code": "14b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-plum-purple-furry.jpg",
+    "Visible": "face front hide",
     "Order": 65
   },
   {
@@ -116,6 +132,7 @@
     "Code": "18a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-sea-green-furry.jpg",
+    "Visible": "face front hide",
     "Order": 97
   },
   {
@@ -123,6 +140,7 @@
     "Code": "18b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-sea-green-furry.jpg",
+    "Visible": "face front hide",
     "Order": 62
   },
   {
@@ -130,6 +148,7 @@
     "Code": "17a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-red.jpg",
+    "Visible": "face front hide",
     "Order": 45
   },
   {
@@ -137,6 +156,7 @@
     "Code": "17b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-red.jpg",
+    "Visible": "face front hide",
     "Order": 82
   }
 ]

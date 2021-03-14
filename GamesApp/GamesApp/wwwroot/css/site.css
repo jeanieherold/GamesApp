@@ -78,6 +78,17 @@ h2 {
     color: #c4d7d1;
 }
 
+/* Button styles
+-------------------------------------------------- */
+.btn-shuffle {
+    background-color: #448892;
+    float: right;
+    margin-top: -3rem;
+    color: #c4d7d1;
+    outline: none;
+    border: none;
+}
+
 
 /* SignIn Form styles
 -------------------------------------------------- */
@@ -145,6 +156,15 @@ h2 {
 .face > * {
     backface-visibility: hidden;
 }
+
+.face.backon {
+    backface-visibility: visible;
+}
+
+.face.hide {
+    visibility: hidden;
+}
+
 
 .front {
     background: transparent;

@@ -7,10 +7,10 @@
 <div class="container-fluid wrapper deck mb-5">
     @foreach (var card in CardService.GetCards().OrderBy(card => card.Order))
     {
-        <div class="memory-card" data-value="@card.Value" data-target="#cardModal" data-toggle="modal" @onclick="(e => SelectCard(card.Value))">
+        <div class="memory-card" data-value="@card.Value" data-target="#cardModal" data-toggle="modal" @onclick="(e => SelectCard(card.Value, selectedCardVisibility))">
             <div class="faces">
-                <div class="face front"><img src="@card.FrontImage" /></div>
-                <div class="face back"></div>
+                <div class="@selectedCardVisibility"><img src="@card.FrontImage" /></div>
+                <div class="face back backon"></div>
             </div>
         </div>
     }
@@ -21,20 +21,22 @@
 
 @code {
     string selectedCardValue;
+    string selectedCardVisibility = "face front hide";
     string Message { get; set; }
 
-    void SelectCard(string cardValue)
+    void SelectCard(string cardValue, string cardVisible)
     {
         selectedCardValue = cardValue;
-        Message = selectedCardValue;
+        selectedCardVisibility = cardVisible;
+        Message = selectedCardValue + " " + cardVisible;
+
+        if(this.selectedCardVisibility == "face front hide")
+        {
+            this.selectedCardVisibility = "face front";
+        }
+        else
+        {
+            this.selectedCardVisibility = "face front hide";
+        }
     }
 }
-
-@*@code {
-    string Message { get; set; }
-
-    void SelectCard()
-    {
-        Message = "Hello";
-    }
-}*@
