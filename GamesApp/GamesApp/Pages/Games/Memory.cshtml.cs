@@ -12,17 +12,18 @@ namespace GamesApp.Pages.Games
 {
     public class MemoryModel : PageModel
     {
-        private readonly ILogger<MemoryModel> _logger;
+        //private readonly ILogger<MemoryModel> _logger;
 
-        public JsonFileCardService CardService;
-        public IEnumerable<Card> Cards { get; private set; } //only this class can set the cards
+        //changed to using Blazor component - comment out for reference
+        //public JsonFileCardService CardService;
+        //public IEnumerable<Card> Cards { get; private set; } //only this class can set the cards
 
         //Add all the services I need onn the page here
-        public MemoryModel(ILogger<MemoryModel> logger, JsonFileCardService cardService)
-        {
-            _logger = logger;
-            CardService = cardService;
-        }
+        //public MemoryModel(ILogger<MemoryModel> logger, JsonFileCardService cardService)
+        //{
+        //    _logger = logger;
+        //    //CardService = cardService;
+        //}
 
         //properties
         [BindProperty(SupportsGet = true)]

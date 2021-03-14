@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 
     gsap.set(wrapper, { autoAlpha: 1 });
-    gsap.from(".memory-card", { opacity: 0, stagger: 0.2 });
+    gsap.from(".memory-card", { opacity: 0, stagger: 0.1 });
 
 });
 

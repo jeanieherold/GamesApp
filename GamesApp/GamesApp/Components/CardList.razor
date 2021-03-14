@@ -1,13 +1,13 @@
 ﻿@using Microsoft.AspNetCore.Components.Web;
 @using GamesApp.Models;
 @using GamesApp.Services;
-@inject JsonFileCardService CardService;
+@inject JsonFileCardService CardService
 
 <div class="container-fluid wrapper deck mb-5">
-    @foreach (var card in CardService.updateCardOrder().OrderBy(card => card.Order))
+    @foreach (var card in CardService.GetCards().OrderBy(card => card.Order))
     {
         <div class="memory-card"
-             @onclick="(e => SelectCard(card.Value))">
+             @onclick="(e => SelectCard(card.Value))" data-toggle="modal" data-target="#cardModal">
             <div class="faces">
                 <div class="face front"><img src="@card.FrontImage" /></div>
                 <div class="face back"></div>
@@ -16,14 +16,31 @@
     }
 </div>
 
+@if (selectedCard != null)
+{
+    <div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="cardValue" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">@selectedCard.Value</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 
 @code {
-    Card selectCard;
-    string selectCardValue;
+    Card selectedCard;
+    string selectedCardValue;
 
     void SelectCard(string cardValue)
     {
-        selectCardValue = cardValue;
-        selectCard = CardService.GetCards().First(x => x.Value == cardValue);
+        selectedCardValue = cardValue;
+        selectedCard = CardService.GetCards().First(x => x.Value == cardValue);
     }
 }
