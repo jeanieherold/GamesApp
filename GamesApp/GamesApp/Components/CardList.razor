@@ -27,16 +27,18 @@
     void SelectCard(string cardValue, string cardVisible)
     {
         selectedCardValue = cardValue;
+
         selectedCardVisibility = cardVisible;
+
         Message = selectedCardValue + " " + cardVisible;
 
-        if(this.selectedCardVisibility == "face front hide")
+        if(cardVisible == "face front hide")
         {
-            this.selectedCardVisibility = "face front";
+            selectedCardVisibility = "face front";
         }
         else
         {
-            this.selectedCardVisibility = "face front hide";
+            selectedCardVisibility = "face front hide";
         }
     }
 }
