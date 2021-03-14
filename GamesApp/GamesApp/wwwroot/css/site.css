@@ -94,7 +94,7 @@ h2 {
     align-content: flex-start;
     flex-wrap: wrap;
     padding: 1rem;
-    visibility: hidden;
+/*    visibility: hidden;*/
     width: 90vw;
     height: 90vw;
     margin: 0 auto;

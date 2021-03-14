@@ -7,7 +7,7 @@
 <div class="container-fluid wrapper deck mb-5">
     @foreach (var card in CardService.updateCardOrder().OrderBy(card => card.Order))
     {
-        <div class="memory-card" data-value="@card.Value" data-target="#cardModal" data-toggle="modal" @onclick="(e => SelectCard(card.Value))">
+        <div class="memory-card" data-value="@card.Value" data-target="#cardModal" data-toggle="modal" @onclick="GreetMe">
             <div class="faces">
                 <div class="face front"><img src="@card.FrontImage" /></div>
                 <div class="face back"></div>
@@ -17,26 +17,13 @@
 </div>
 
 
-    <div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="cardValue" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cardValue">@selectedCardValue</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+@Message
 
 @code {
-    string selectedCardValue;
+    string Message { get; set; }
 
-    void SelectCard(string cardValue)
+    void GreetMe()
     {
-        selectedCardValue = cardValue;
+        Message = "Hello";
     }
 }
