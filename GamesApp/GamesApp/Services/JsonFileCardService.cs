@@ -47,19 +47,6 @@ namespace GamesApp.Services
                 card.Order = random.Next(100);
             }
 
-
-            using (var outputStream = File.OpenWrite(JsonFileName))
-            {
-                JsonSerializer.Serialize<IEnumerable<Card>>(
-                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
-                    {
-                        SkipValidation = true,
-                        Indented = true
-                    }),
-                    cards
-                );
-            }
-
             return cards;
         }
 
