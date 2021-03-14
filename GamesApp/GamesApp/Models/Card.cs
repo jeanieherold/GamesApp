@@ -9,6 +9,9 @@ namespace GamesApp.Models
         public string Value { get; set; }
         public string Code { get; set; }
 
+        [JsonPropertyName("BackImage")]
+        public string BackImage { get; set; }
+
         [JsonPropertyName("FrontImage")]
         public string FrontImage { get; set; }
         public int Order { get; set; }

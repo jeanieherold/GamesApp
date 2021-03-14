@@ -5,9 +5,9 @@
 @inject JsonFileCardService CardService;
 
 <div class="container-fluid wrapper deck mb-5">
-    @foreach (var card in CardService.updateCardOrder().OrderBy(card => card.Order))
+    @foreach (var card in CardService.GetCards().OrderBy(card => card.Order))
     {
-        <div class="memory-card" data-value="@card.Value" data-target="#cardModal" data-toggle="modal" @onclick="GreetMe">
+        <div class="memory-card" data-value="@card.Value" data-target="#cardModal" data-toggle="modal" @onclick="(e => SelectCard(card.Value))">
             <div class="faces">
                 <div class="face front"><img src="@card.FrontImage" /></div>
                 <div class="face back"></div>
@@ -20,10 +20,21 @@
 @Message
 
 @code {
+    string selectedCardValue;
     string Message { get; set; }
 
-    void GreetMe()
+    void SelectCard(string cardValue)
+    {
+        selectedCardValue = cardValue;
+        Message = selectedCardValue;
+    }
+}
+
+@*@code {
+    string Message { get; set; }
+
+    void SelectCard()
     {
         Message = "Hello";
     }
-}
+}*@
