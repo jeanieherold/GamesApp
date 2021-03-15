@@ -5,7 +5,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-bailey-blue-furry.jpg",
     "Order": 21,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "BaileyBlueFurry",
@@ -13,7 +13,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-bailey-blue-furry.jpg",
     "Order": 8,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "CarribeanBlueFurry",
@@ -21,7 +21,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-carribean-blue-furry.jpg",
     "Order": 85,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "CarribeanBlueFurry",
@@ -29,7 +29,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-carribean-blue-furry.jpg",
     "Order": 82,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "GoldenFurry",
@@ -45,7 +45,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-golden-furry.jpg",
     "Order": 34,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "GrassGreenFurry",
@@ -61,7 +61,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-grass-green-furry.jpg",
     "Order": 42,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "OrangeFurry",
@@ -69,7 +69,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-orange-furry.jpg",
     "Order": 51,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "OrangeFurry",
@@ -77,7 +77,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-orange-furry.jpg",
     "Order": 67,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "PerfectPurpleFurry",
@@ -85,7 +85,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-perfect-purple-furry.jpg",
     "Order": 77,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "PerfectPurpleFurry",
@@ -93,7 +93,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-perfect-purple-furry.jpg",
     "Order": 68,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "PinkFurry",
@@ -101,7 +101,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-petunia-pink-furry.jpg",
     "Order": 48,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "PinkFurry",
@@ -109,7 +109,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-petunia-pink-furry.jpg",
     "Order": 70,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "PlumFurry",
@@ -117,7 +117,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-plum-purple-furry.jpg",
     "Order": 23,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "PlumFurry",
@@ -125,7 +125,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-plum-purple-furry.jpg",
     "Order": 65,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "SeaGreenFurry",
@@ -133,7 +133,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-sea-green-furry.jpg",
     "Order": 97,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "SeaGreenFurry",
@@ -141,7 +141,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-sea-green-furry.jpg",
     "Order": 62,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "Red",
@@ -149,7 +149,7 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-red.jpg",
     "Order": 45,
-    "Visible": "face front hide"
+    "Visible": "face front"
   },
   {
     "Value": "Red",
@@ -157,6 +157,6 @@
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-red.jpg",
     "Order": 82,
-    "Visible": "face front hide"
+    "Visible": "face front"
   }
 ]

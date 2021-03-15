@@ -10,7 +10,7 @@
     {
         <div class="memory-card" data-value="@card.Value" data-code="@card.Code" data-target="#cardModal" data-toggle="modal" @onclick="(e => SelectCard(card))">
             <div class="faces">
-                <div class="@card.Visible"><img src="@card.FrontImage" /></div>
+                <div class="@card.Visible @visibility"><img src="@card.FrontImage" /></div>
                 <div class="face back backon"></div>
             </div>
         </div>
@@ -21,23 +21,24 @@
 @code {
     string selectedCardValue;
     string selectedCardVisible;
+
+    string visibility = "hide";
+
     string Message { get; set; }
 
     void SelectCard(Card card)
     {
         selectedCardValue = card.Value;
-        selectedCardVisible = card.Visible;
 
-        @*if (card.Visible == "face front hide")
+        if(visibility == "hide")
         {
-            CardService.SetCardVisibilty(card.Code, "face front");
+            visibility = "";
+        } else
+        {
+            visibility = "hide";
         }
-        else
-        {
-            CardService.SetCardVisibilty(card.Code, "face front hide");
-        }*@
 
 
-        Message = selectedCardValue + " " + card.Visible;
+        Message = selectedCardValue + " " + visibility;
     }
 }
