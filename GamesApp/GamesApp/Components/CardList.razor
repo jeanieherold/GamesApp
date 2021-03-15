@@ -20,7 +20,6 @@
 
 @code {
     string selectedCardValue;
-    string selectedCardVisible;
 
     string visibility = "hide";
 
@@ -33,12 +32,13 @@
         if(visibility == "hide")
         {
             visibility = "";
-        } else
+        }
+        else
         {
             visibility = "hide";
         }
 
 
-        Message = selectedCardValue + " " + visibility;
+        Message = selectedCardValue;
     }
 }
