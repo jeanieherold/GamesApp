@@ -3,33 +3,8 @@
 
 // Write your Javascript code.
 
-$(document).ready(function () {
+//$(document).ready(function () {
 
-    let wrapper = document.querySelector(".deck");
-    let parentCard = document.querySelector(".memory-card");
-
-    let cards = gsap.utils.toArray(".memory-card > .faces");
-
-    cards.forEach(function (card, index) {
-
-        let animation = gsap.timeline()
-        animation.to(card, { rotationY: 180 })
-        animation.progress(1)
-
-        card.animation = animation
-        card.addEventListener("click", function () {
-            card.animation.reversed(!card.animation.reversed())
-        });
-    });
-
-
-    gsap.set(wrapper, { autoAlpha: 1 });
-    gsap.from(".memory-card", { opacity: 0, stagger: 0.2 });
-
-    $('.front').on('click', function () {
-        $(this).toggleClass('hide');
-    });
-
-});
+//});
 
 

@@ -7,8 +7,6 @@
 @using System.Text.Json;
 @inject JsonFileCardService CardService;
 
-
-<div class="container-fluid text-center">@Message</div>
 <div class="container-fluid wrapper deck mb-5">
     @foreach (var card in CardService.GetCards().OrderBy(card => card.Order))
     {
