@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -15,7 +17,8 @@ namespace GamesApp.Models
         [JsonPropertyName("FrontImage")]
         public string FrontImage { get; set; }
         public int Order { get; set; }
-        public string Visible { get; set; }
+
+        public List<string> Visible { get; set; }
 
         //overriding and making our own toString method - do this for all is good practice
         public override string ToString() => JsonSerializer.Serialize<Card>(this);

@@ -2,43 +2,65 @@
 @using Microsoft.AspNetCore.Components.Web;
 @using GamesApp.Models;
 @using GamesApp.Services;
+@using System.Collections;
+@using System.Collections.Generic;
+@using System.Text.Json;
 @inject JsonFileCardService CardService;
+
 
 <div class="container-fluid text-center">@Message</div>
 <div class="container-fluid wrapper deck mb-5">
     @foreach (var card in CardService.GetCards().OrderBy(card => card.Order))
     {
-        <div class="memory-card" data-value="@card.Value" data-code="@card.Code" data-target="#cardModal" data-toggle="modal" @onclick="(e => SelectCard(card))">
+        <div class="memory-card" data-value="@card.Value" data-code="@card.Code" @onclick="e => FlipCard(card)">
             <div class="faces">
-                <div class="@card.Visible @visibility"><img src="@card.FrontImage" /></div>
+                <div class="@RenderFaceCardClasslist(card.Code, card.Visible)"><img src="@card.FrontImage" /></div>
                 <div class="face back backon"></div>
             </div>
         </div>
     }
-    
+
 </div>
 
 @code {
     string selectedCardValue;
-
-    string visibility = "hide";
-
+    List<string> frontImgClasses = new List<string>();
     string Message { get; set; }
 
-    void SelectCard(Card card)
+    void FlipCard(Card card)
     {
         selectedCardValue = card.Value;
+        frontImgClasses.Clear();
+        Message = selectedCardValue;
 
-        if(visibility == "hide")
+        var selected = CardService.GetCards().First(x => x.Code == card.Code);
+
+        foreach (string cls in selected.Visible)
         {
-            visibility = "";
+            frontImgClasses.Add(cls);
+        }
+
+        if (frontImgClasses.Contains("hide"))
+        {
+            frontImgClasses.Remove("hide");
         }
         else
         {
-            visibility = "hide";
+            frontImgClasses.Add("hide");
         }
 
+        CardService.updateVisibilty(selected.Code, frontImgClasses);
 
-        Message = selectedCardValue;
+        RenderFaceCardClasslist(card.Code, frontImgClasses);
+    }
+
+    private string RenderFaceCardClasslist(string code, List<string> list)
+    {
+
+        var faceCardClasslist = string.Join(" ", list);
+
+        faceCardClasslist += $" {code}";
+
+        return faceCardClasslist;
     }
 }
