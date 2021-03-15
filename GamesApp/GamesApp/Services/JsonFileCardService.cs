@@ -50,7 +50,7 @@ namespace GamesApp.Services
             return cards;
         }
 
-        //update card visibility
+        //update card visibility in database
         public void updateVisibilty(string code, List<string> visible)
         {
             var cards = GetCards();
@@ -62,9 +62,6 @@ namespace GamesApp.Services
             {
                 query.Visible.Add(cls);
             }
-
-            //this should prolly go in its own class or method but here for now
-            //want to write/update the json player file
 
             JsonSerializer(cards, JsonFileName);
         }
@@ -81,21 +78,6 @@ namespace GamesApp.Services
             jsonWriter.Close();
             sw.Close();
 
-        }
-
-        public object JsonDeserialize(Type dataType, string filePath)
-        {
-            JObject obj = null;
-            JsonSerializer jsonSerializer = new JsonSerializer();
-            if(File.Exists(filePath))
-            {
-                StreamReader sr = new StreamReader(filePath);
-                JsonReader jsonReader = new JsonTextReader(sr);
-                obj = jsonSerializer.Deserialize(jsonReader) as JObject;
-                jsonReader.Close();
-                sr.Close();
-            }
-            return obj.ToObject(dataType);
         }
 
     }

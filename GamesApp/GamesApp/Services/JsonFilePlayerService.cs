@@ -5,6 +5,9 @@ using System.IO;
 using System.Text.Json;
 using GamesApp.Models;
 using Microsoft.AspNetCore.Hosting;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using JsonSerializer = Newtonsoft.Json.JsonSerializer;
 
 namespace GamesApp.Services
 {
@@ -27,11 +30,7 @@ namespace GamesApp.Services
         {
             using (var jsonFileReader = File.OpenText(JsonFileName))
             {
-                return JsonSerializer.Deserialize<Player[]>(jsonFileReader.ReadToEnd(),
-                    new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
+                return JsonConvert.DeserializeObject<Player[]>(File.ReadAllText(JsonFileName));
             }
         }
 
@@ -52,20 +51,7 @@ namespace GamesApp.Services
                 query.Score = score;
             }
 
-            //this should prolly go in its own class or method but here for now
-            //want to write/update the json player file
-
-            using (var outputStream = File.OpenWrite(JsonFileName))
-            {
-                JsonSerializer.Serialize<IEnumerable<Player>>(
-                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
-                    {
-                        SkipValidation = true,
-                        Indented = true
-                    }),
-                    players
-                );
-            }
+            JsonSerializer(players, JsonFileName);
         }
 
         //update player score
@@ -84,20 +70,22 @@ namespace GamesApp.Services
                 query.Score = score;
             }
 
-            //this should prolly go in its own class or method but here for now
-            //want to write/update the json player file
+            JsonSerializer(players, JsonFileName);
 
-            using (var outputStream = File.OpenWrite(JsonFileName))
-            {
-                JsonSerializer.Serialize<IEnumerable<Player>>(
-                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
-                    {
-                        SkipValidation = true,
-                        Indented = true
-                    }),
-                    players
-                );
-            }
+        }
+
+        public void JsonSerializer(object data, string filePath)
+        {
+            JsonSerializer jsonSerializer = new JsonSerializer();
+            if (File.Exists(filePath)) File.Delete(filePath);
+            StreamWriter sw = new StreamWriter(filePath);
+            JsonWriter jsonWriter = new JsonTextWriter(sw);
+
+            jsonSerializer.Serialize(jsonWriter, data);
+
+            jsonWriter.Close();
+            sw.Close();
+
         }
 
     }
