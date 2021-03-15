@@ -50,5 +50,30 @@ namespace GamesApp.Services
             return cards;
         }
 
+        //update card visibility
+        public void SetCardVisibilty(string code, string visible)
+        {
+            var cards = GetCards();
+
+            var query = cards.First(x => x.Code == code);
+
+            query.Visible = visible;
+
+            //this should prolly go in its own class or method but here for now
+            //want to write/update the json player file
+
+            using (var outputStream = File.OpenWrite(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<Card>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                    cards
+                );
+            }
+        }
+
     }
 }

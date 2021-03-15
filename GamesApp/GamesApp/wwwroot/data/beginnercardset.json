@@ -4,159 +4,159 @@
     "Code": "3a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-bailey-blue-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 21
+    "Order": 21,
+    "Visible": "face front hide"
   },
   {
     "Value": "BaileyBlueFurry",
     "Code": "3b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-bailey-blue-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 8
+    "Order": 8,
+    "Visible": "face front hide"
   },
   {
     "Value": "CarribeanBlueFurry",
     "Code": "5a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-carribean-blue-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 85
+    "Order": 85,
+    "Visible": "face front hide"
   },
   {
     "Value": "CarribeanBlueFurry",
     "Code": "5b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-carribean-blue-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 82
+    "Order": 82,
+    "Visible": "face front hide"
   },
   {
     "Value": "GoldenFurry",
     "Code": "6a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-golden-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 2
+    "Order": 2,
+    "Visible": "face front"
   },
   {
     "Value": "GoldenFurry",
     "Code": "6b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-golden-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 34
+    "Order": 34,
+    "Visible": "face front hide"
   },
   {
     "Value": "GrassGreenFurry",
     "Code": "8a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-grass-green-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 2
+    "Order": 2,
+    "Visible": "face front"
   },
   {
     "Value": "GrassGreenFurry",
     "Code": "8b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-grass-green-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 42
+    "Order": 42,
+    "Visible": "face front hide"
   },
   {
     "Value": "OrangeFurry",
     "Code": "10a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-orange-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 51
+    "Order": 51,
+    "Visible": "face front hide"
   },
   {
     "Value": "OrangeFurry",
     "Code": "10b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-orange-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 67
+    "Order": 67,
+    "Visible": "face front hide"
   },
   {
     "Value": "PerfectPurpleFurry",
     "Code": "11a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-perfect-purple-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 77
+    "Order": 77,
+    "Visible": "face front hide"
   },
   {
     "Value": "PerfectPurpleFurry",
     "Code": "11b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-perfect-purple-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 68
+    "Order": 68,
+    "Visible": "face front hide"
   },
   {
     "Value": "PinkFurry",
     "Code": "12a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-petunia-pink-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 48
+    "Order": 48,
+    "Visible": "face front hide"
   },
   {
     "Value": "PinkFurry",
     "Code": "12b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-petunia-pink-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 70
+    "Order": 70,
+    "Visible": "face front hide"
   },
   {
     "Value": "PlumFurry",
     "Code": "14a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-plum-purple-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 23
+    "Order": 23,
+    "Visible": "face front hide"
   },
   {
     "Value": "PlumFurry",
     "Code": "14b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-plum-purple-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 65
+    "Order": 65,
+    "Visible": "face front hide"
   },
   {
     "Value": "SeaGreenFurry",
     "Code": "18a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-sea-green-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 97
+    "Order": 97,
+    "Visible": "face front hide"
   },
   {
     "Value": "SeaGreenFurry",
     "Code": "18b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-sea-green-furry.jpg",
-    "Visible": "face front hide",
-    "Order": 62
+    "Order": 62,
+    "Visible": "face front hide"
   },
   {
     "Value": "Red",
     "Code": "17a",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-red.jpg",
-    "Visible": "face front hide",
-    "Order": 45
+    "Order": 45,
+    "Visible": "face front hide"
   },
   {
     "Value": "Red",
     "Code": "17b",
     "BackImage": "../img/back.jpg",
     "FrontImage": "../img/monster-red.jpg",
-    "Visible": "face front hide",
-    "Order": 82
+    "Order": 82,
+    "Visible": "face front hide"
   }
 ]
