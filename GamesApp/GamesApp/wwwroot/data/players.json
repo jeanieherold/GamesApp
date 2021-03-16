@@ -1,16 +1,1 @@
-[
-  {
-    "Id": "1",
-    "FirstName": null,
-    "LastName": null,
-    "UserName": "jeanieherold",
-    "Score": 5
-  },
-  {
-    "Id": "2",
-    "FirstName": null,
-    "LastName": null,
-    "UserName": "redbaron",
-    "Score": 7
-  }
-]
+[{"Id":"One","FirstName":null,"LastName":null,"UserName":"jeanieherold","Score":75},{"Id":"Two","FirstName":null,"LastName":null,"UserName":"redbaron","Score":0}]

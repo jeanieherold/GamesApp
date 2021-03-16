@@ -10,11 +10,7 @@
     <h2 class="display-4">Memory Game</h2>
 </div>
 
-<div class="container mb-2">
-    <div class="col col-lg-4"><p class="mb-1">Player One: @Model.UserName</p></div>
-    <div class="col col-lg-4"><p class="mb-0">Score: @Model.Score</p></div>
-</div>
-
+@(await Html.RenderComponentAsync<PlayerList>(RenderMode.ServerPrerendered))
 @(await Html.RenderComponentAsync<CardList>(RenderMode.ServerPrerendered))
 
 <script src="_framework/blazor.server.js"></script>

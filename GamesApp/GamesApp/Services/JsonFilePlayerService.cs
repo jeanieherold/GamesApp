@@ -55,20 +55,13 @@ namespace GamesApp.Services
         }
 
         //update player score
-        public void updatePlayerScore(string playerId, int score)
+        public void updatePlayerScore(string playerId, int pointsEarned)
         {
             var players = GetPlayers();
 
             var query = players.First(x => x.Id == playerId);
 
-            if (query.Id == null)
-            {
-                query.Score = score;
-            }
-            else
-            {
-                query.Score = score;
-            }
+            query.Score += pointsEarned;
 
             JsonSerializer(players, JsonFileName);
 

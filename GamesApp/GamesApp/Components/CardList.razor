@@ -5,7 +5,21 @@
 @using System.Collections;
 @using System.Collections.Generic;
 @using System.Text.Json;
-@inject JsonFileCardService CardService;
+@inject JsonFileCardService CardService
+@inject JsonFilePlayerService PlayerService
+
+<div class="container player-list mb-5">
+    <div class="row justify-content-md-center">
+        @foreach (var player in PlayerService.GetPlayers())
+        {
+            <div class="col col-lg-3 text-center">
+                <h5>@player.UserName</h5>
+                <h5>@player.Score</h5>
+            </div>
+
+        }
+    </div>
+</div>
 
 <div class="container-fluid wrapper deck mb-5">
     @foreach (var card in CardService.GetCards().OrderBy(card => card.Order))
@@ -22,17 +36,21 @@
 
 @code {
     string selectedCardValue;
+    List<string> hideImgClasslist = new List<string>(new string[] { "face", "front", "hide" });
     List<string> frontImgClasses = new List<string>();
     string Message { get; set; }
+    List<string> clickedCards = new List<string>();
 
     void FlipCard(Card card)
     {
         selectedCardValue = card.Value;
         frontImgClasses.Clear();
         Message = selectedCardValue;
+        int pointsEarned = 0;
 
         var selected = CardService.GetCards().First(x => x.Code == card.Code);
 
+        //set Visibility of card
         foreach (string cls in selected.Visible)
         {
             frontImgClasses.Add(cls);
@@ -47,9 +65,25 @@
             frontImgClasses.Add("hide");
         }
 
+        //update player score in db
+        PlayerService.updatePlayerScore("One", pointsEarned);
+        //update card visibility in db
         CardService.updateVisibilty(selected.Code, frontImgClasses);
-
+        //update card face class list for visibility
         RenderFaceCardClasslist(card.Code, frontImgClasses);
+
+        //see if match, adjust score and clear after 2 cards flipped
+        clickedCards.Add(selected.Value);
+        if (selected.Value == "BaileyBlueFurry")
+        {
+            pointsEarned += 5;
+        }
+        //hide all cards once clicked array count is at 2
+        if (clickedCards.Count > 2)
+        {
+            HideAllCards();
+            clickedCards.Clear();
+        }
     }
 
     private string RenderFaceCardClasslist(string code, List<string> list)
@@ -60,5 +94,14 @@
         faceCardClasslist += $" {code}";
 
         return faceCardClasslist;
+    }
+
+    void HideAllCards()
+    {
+        @foreach (var card in CardService.GetCards())
+        {
+            CardService.updateVisibilty(card.Code, hideImgClasslist);
+        }
+
     }
 }
