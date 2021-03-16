@@ -20,6 +20,8 @@ namespace GamesApp.Models
 
         public List<string> Visible { get; set; }
 
+        public bool Matched { get; set; }
+
         //overriding and making our own toString method - do this for all is good practice
         public override string ToString() => JsonSerializer.Serialize<Card>(this);
       

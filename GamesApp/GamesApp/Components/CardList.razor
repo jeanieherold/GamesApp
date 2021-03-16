@@ -77,6 +77,8 @@
         if (selected.Value == "BaileyBlueFurry")
         {
             pointsEarned += 5;
+            //update player score in db
+            PlayerService.updatePlayerScore("One", pointsEarned);
         }
         //hide all cards once clicked array count is at 2
         if (clickedCards.Count > 2)
