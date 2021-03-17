@@ -47,6 +47,8 @@ namespace GamesApp.Services
                 card.Order = random.Next(100);
             }
 
+            JsonSerializer(cards, JsonFileName);
+
             return cards;
         }
 
