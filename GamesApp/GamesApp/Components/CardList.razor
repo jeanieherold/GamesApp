@@ -83,6 +83,11 @@
         clickedCards.Add(selected);
         if (clickedCards.Count == 2)
         {
+            if(clickedCards[0].Code == clickedCards[1].Code)
+            {
+                clickedCards.Remove(clickedCards[1]);
+                return;
+            }
             var firstCardValue = clickedCards[0].Value;
             var secondCardValue = clickedCards[1].Value;
 
