@@ -80,7 +80,7 @@ h2 {
 
 /* Button styles
 -------------------------------------------------- */
-.btn-shuffle {
+.btn-shuffle, .btn-shuffle:active, .btn-shuffle:focus {
     background-color: #448892;
     color: #c4d7d1;
     outline: none;
