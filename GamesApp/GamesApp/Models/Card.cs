@@ -19,6 +19,7 @@ namespace GamesApp.Models
         public int Order { get; set; }
 
         public List<string> Visible { get; set; }
+        public List<string> Clickable { get; set; }
 
         public bool Matched { get; set; }
 

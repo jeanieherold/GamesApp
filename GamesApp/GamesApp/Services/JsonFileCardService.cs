@@ -66,6 +66,23 @@ namespace GamesApp.Services
             JsonSerializer(cards, JsonFileName);
         }
 
+        //update card clickable in database
+        public void updateClickable(string code, List<string> clickable)
+        {
+            var cards = GetCards();
+
+            var query = cards.First(x => x.Code == code);
+            query.Clickable.Clear();
+
+            foreach (string cls in clickable)
+            {
+                query.Clickable.Add(cls);
+            }
+
+            JsonSerializer(cards, JsonFileName);
+        }
+
+        //serializer
         public void JsonSerializer(object data, string filePath)
         {
             JsonSerializer jsonSerializer = new JsonSerializer();
