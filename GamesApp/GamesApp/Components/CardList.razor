@@ -19,7 +19,7 @@
                 <h3>Score: @player.Score</h3>
             </div>
             <div class="col col-lg-3 text-center">
-                <button class="btn btn-shuffle" @onclick="e => ResetCards()">Reset</button>
+                <button class="btn btn-shuffle" @onclick="e => ResetCards()">New Game</button>
             </div>
 
         }
@@ -157,7 +157,7 @@
 
     async void HideAllCards()
     {
-        await Task.Delay(50);
+        await Task.Delay(1);
         foreach (var card in CardService.GetCards())
         {
             if (card.Clickable.Contains("matched"))
