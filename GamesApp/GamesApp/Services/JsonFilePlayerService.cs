@@ -61,7 +61,13 @@ namespace GamesApp.Services
 
             var query = players.First(x => x.Id == playerId);
 
-            query.Score += pointsEarned;
+            if (pointsEarned == -1)
+            {
+                query.Score = 0;
+            } else
+            {
+                query.Score += pointsEarned;
+            }
 
             JsonSerializer(players, JsonFileName);
 

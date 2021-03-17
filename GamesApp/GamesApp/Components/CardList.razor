@@ -8,13 +8,18 @@
 @inject JsonFileCardService CardService
 @inject JsonFilePlayerService PlayerService
 
-<div class="container player-list mb-5">
+<div class="container player-list mb-2">
     <div class="row justify-content-md-center">
         @foreach (var player in PlayerService.GetPlayers())
         {
             <div class="col col-lg-3 text-center">
-                <h5>@player.UserName</h5>
-                <h5>@player.Score</h5>
+                <h5>Player 1: @player.UserName</h5>
+            </div>
+            <div class="col col-lg-3 text-center">
+                <h5>Score: @player.Score</h5>
+            </div>
+            <div class="col col-lg-3 text-center">
+                <button class="btn btn-shuffle" @onclick="e => ResetCards()">Reset</button>
             </div>
 
         }
@@ -108,6 +113,20 @@
             HideAllCards();
 
         }
+
+    }
+
+    private void ResetCards()
+    {
+        List<string> resetMemoryCardClasses = new List<string>(new string[] { "memory-card" });
+        foreach (var card in CardService.GetCards())
+        {
+            CardService.updateVisibilty(card.Code, hideImgClasslist);
+            CardService.updateClickable(card.Code, resetMemoryCardClasses);
+            CardService.updateCardOrder();
+        }
+
+        PlayerService.updatePlayerScore("One", -1);
 
     }
 
