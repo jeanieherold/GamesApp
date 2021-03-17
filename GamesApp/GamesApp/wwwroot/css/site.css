@@ -78,16 +78,29 @@ h2 {
     color: #c4d7d1;
 }
 
+hr {
+    height: 1px;
+    background-color: #c4d7d1;
+}
+
 /* Button styles
 -------------------------------------------------- */
 .btn-shuffle, .btn-shuffle:active, .btn-shuffle:focus {
-    background-color: #448892;
-    color: #c4d7d1;
+    background-color: #c4d7d1;
+    color: #2d3749;
     outline: none;
     border: none;
-    padding: .5rem 2.6rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+    line-height: .9;
+}
+
+.btn-shuffle:hover {
+    color: #dd8683;
+    border: 1px solid #dd8683;
 }
 
 
@@ -97,39 +110,61 @@ h2 {
     margin: 0 auto;
 }
 
+/* Player Score Directions styles
+-------------------------------------------------- */
+.player-list {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #c4d7d1;
+    padding: 1rem;
+}
+
+.player-list h4 {
+    color: #dd8683;
+}
+
+.directions p {
+    margin-bottom: 0.25rem;
+    font-size: .8rem;
+}
+
+.new-game {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
 /* Memory Card styles
 -------------------------------------------------- */
 .deck {
     display: flex;
-    justify-content: center;
     align-content: flex-start;
     flex-wrap: wrap;
     padding: 1rem;
-/*    visibility: hidden;*/
-    width: 90vw;
-    height: 90vw;
+    /*    visibility: hidden;*/
+    width: 95vw;
+    height: 95vw;
     margin: 0 auto;
 }
 
 @media only screen and (min-width: 600px) {
     .deck {
-        width: 75vw;
-        height: 75vw;
+        width: 90vw;
+        height: 90vw;
     }
 }
 
 @media only screen and (min-width: 780px) {
     .deck {
-        width: 65vw;
-        height: 65vw;
+        width: 70vw;
+        height: 70vw;
     }
 }
 
 .memory-card {
     position: relative;
-    width: 15%;
-    height: 15%;
+    width: 17%;
+    height: 17%;
     max-width: 23%;
     border-radius: 5px;
     background-color: transparent;

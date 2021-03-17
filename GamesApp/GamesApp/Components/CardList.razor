@@ -8,21 +8,34 @@
 @inject JsonFileCardService CardService
 @inject JsonFilePlayerService PlayerService
 
-<div class="container player-list mb-2">
-    <div class="row justify-content-md-center">
+<div class="container player-list mb-3">
+    <div class="row text-center mb-4">
+        <div class="col directions">
+            <p>Keep clicking 2 cards to find Matching pairs.</p>
+            <p>If no match made, cards will turn facedown once you make subsequent 2 card choices</p>
+            <p>Earn points with each match made. No points for clicking same card twice.</p>
+            <p>The more matches you make the more points you will earn.</p>
+        </div>
+
+    </div>
+    <div class="row mb-3 justify-content-md-center">
         @foreach (var player in PlayerService.GetPlayers())
         {
-            <div class="col col-lg-3 text-center">
+            <div class="col col-md-6">
                 <h4>Player 1: @player.UserName</h4>
             </div>
-            <div class="col col-lg-3 text-center">
+            <div class="col col-md-4 text-right">
                 <h4>Score: @player.Score</h4>
             </div>
-            <div class="col col-lg-3 text-center">
-                <button class="btn btn-shuffle" @onclick="e => ResetCards()">New Game</button>
-            </div>
-
         }
+    </div>
+</div>
+
+<div class="container new-game">
+    <div class="row mb-3 justify-content-md-center">
+        <div class="col col-md-10 text-right">
+            <button class="btn btn-shuffle" @onclick="e => ResetCards()">New Game</button>
+        </div>
     </div>
 </div>
 
@@ -46,12 +59,12 @@
     List<string> frontImgClasses = new List<string>();
     string Message { get; set; }
     List<Card> clickedCards = new List<Card>();
+    int pointsEarned = 0;
 
     void FlipCard(Card card)
     {
         selectedCardValue = card.Value;
         frontImgClasses.Clear();
-        int pointsEarned = 0;
 
         var selected = CardService.GetCards().First(x => x.Code == card.Code);
 
@@ -76,9 +89,6 @@
         //update card visibility in db
         CardService.updateVisibilty(selected.Code, frontImgClasses);
 
-        //update player score in db
-        PlayerService.updatePlayerScore("One", pointsEarned);
-
         //see if match, adjust score and clear after 2 cards flipped
         clickedCards.Add(selected);
         if (clickedCards.Count == 2)
@@ -93,7 +103,10 @@
 
             if (firstCardValue == secondCardValue)
             {
-                pointsEarned += 5;
+                pointsEarned += 3;
+                //update player score in db
+                PlayerService.updatePlayerScore("One", pointsEarned);
+
                 List<string> matchedImgClasslist = new List<string>(new string[] { "face", "front", "matched" });
                 foreach (var matchedcard in clickedCards)
                 {
@@ -104,10 +117,6 @@
             }
             // make matched card unclickable
             RenderMatchedClasslist(card.Code, memoryCardClasses);
-
-            //update player score in db
-            PlayerService.updatePlayerScore("One", pointsEarned);
-
         }
 
         //hide all cards once clicked array count is at 2
