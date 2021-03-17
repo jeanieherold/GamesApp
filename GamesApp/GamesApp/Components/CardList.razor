@@ -13,10 +13,10 @@
         @foreach (var player in PlayerService.GetPlayers())
         {
             <div class="col col-lg-3 text-center">
-                <h3>Player 1: @player.UserName</h3>
+                <h4>Player 1: @player.UserName</h4>
             </div>
             <div class="col col-lg-3 text-center">
-                <h3>Score: @player.Score</h3>
+                <h4>Score: @player.Score</h4>
             </div>
             <div class="col col-lg-3 text-center">
                 <button class="btn btn-shuffle" @onclick="e => ResetCards()">New Game</button>
