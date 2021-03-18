@@ -9,61 +9,7 @@
 @inject JsonFileCardService CardService
 
 
-<div class="container new-game">
-    <div class="row mb-3 justify-content-md-center">
-        <div class="col text-right">
-            <button class="btn btn-shuffle" data-toggle="modal" data-target="#directions" @onclick="e => ResetCards()">Directions</button>
-        </div>
-        <div class="col text-right">
-            <button class="btn btn-shuffle" @onclick="e => ResetCards()">New Game</button>
-        </div>
-        <div class="col text-right">
-            <button class="btn btn-shuffle" @onclick="e => ResetCards()">New Game</button>
-        </div>
-    </div>
-</div>
-
-<div id="directions" class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Memory Game Directions</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="col directions">
-                    <p>Keep clicking 2 cards to find Matching pairs.</p>
-                    <p>If no match made, cards will turn facedown once you make subsequent 2 card choices</p>
-                    <p>Earn points with each match made. No points for clicking same card twice.</p>
-                    <p>The more matches you make the more points you will earn.</p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 @code {
 
-    List<string> hideImgClasslist = new List<string>(new string[] { "face", "front", "hide" });
-
-    private void ResetCards()
-    {
-        List<string> resetMemoryCardClasses = new List<string>(new string[] { "memory-card" });
-        foreach (var card in CardService.GetCards())
-        {
-            CardService.updateVisibilty(card.Code, hideImgClasslist);
-            CardService.updateClickable(card.Code, resetMemoryCardClasses);
-            CardService.updateCardOrder();
-        }
-
-        PlayerService.updatePlayerScore("One", -1);
-
-    }
 
 }
