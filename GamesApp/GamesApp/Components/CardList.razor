@@ -50,10 +50,10 @@
     <div class="row justify-content-md-center">
         @foreach (var player in PlayerService.GetPlayers())
         {
-            <div class="col col-md-6">
+            <div class="col col-8">
                 <h4>Player 1: @player.UserName</h4>
             </div>
-            <div class="col col-md-4 text-right">
+            <div class="col col-4 text-right">
                 <h4>Score: @player.Score</h4>
             </div>
         }
