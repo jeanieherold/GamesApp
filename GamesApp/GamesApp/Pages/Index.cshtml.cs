@@ -6,16 +6,24 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using GamesApp.Models;
+using GamesApp.Services;
+
 
 namespace GamesApp.Pages
 {
     public class IndexModel : PageModel
+
     {
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public JsonFilePlayerService PlayerService;
+        public IEnumerable<Player> Players { get; set; } //only this class can set the cards
+
+
+        public IndexModel(ILogger<IndexModel> logger, JsonFilePlayerService playerService)
         {
             _logger = logger;
+            PlayerService = playerService;
         }
 
         //use properties when you want to pass data
@@ -52,6 +60,7 @@ namespace GamesApp.Pages
             {
                 //save model to database here!
                 //give to a class library and have it save to an api
+                PlayerService.AddUpdatePlayer("One", Player.UserName, 0);
 
                 //going to pass page using specified route obj (pass anonymous obj)
                 return RedirectToPage("/Games/Memory", new { UserName = Player.UserName });

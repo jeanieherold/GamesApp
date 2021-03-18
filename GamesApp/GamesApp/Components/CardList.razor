@@ -8,17 +8,46 @@
 @inject JsonFileCardService CardService
 @inject JsonFilePlayerService PlayerService
 
-<div class="container player-list mb-3">
-    <div class="row text-center mb-4">
-        <div class="col directions">
-            <p>Keep clicking 2 cards to find Matching pairs.</p>
-            <p>If no match made, cards will turn facedown once you make subsequent 2 card choices</p>
-            <p>Earn points with each match made. No points for clicking same card twice.</p>
-            <p>The more matches you make the more points you will earn.</p>
-        </div>
-
-    </div>
+<div class="container new-game">
     <div class="row mb-3 justify-content-md-center">
+        <div class="col text-right">
+            <button class="btn btn-shuffle" data-toggle="modal" data-target="#directions">Directions</button>
+        </div>
+        <div class="col text-right">
+            <a href="/" class="btn btn-shuffle">Edit Player</a>
+        </div>
+        <div class="col text-right">
+            <button class="btn btn-shuffle" @onclick="e => ResetCards()">New Game</button>
+        </div>
+    </div>
+</div>
+
+<div id="directions" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Memory Game Directions</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col directions">
+                    <p>Click 2 cards to find Matching pairs.</p>
+                    <p>If no match made, cards will turn facedown once you make subsequent 2 card choices as you continue to search for matches.</p>
+                    <p>Earn points with each match made. No points for clicking same card twice.</p>
+                    <p>The more matches you make the more points you will earn.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container player-list">
+    <div class="row justify-content-md-center">
         @foreach (var player in PlayerService.GetPlayers())
         {
             <div class="col col-md-6">
@@ -31,25 +60,16 @@
     </div>
 </div>
 
-<div class="container new-game">
-    <div class="row mb-3 justify-content-md-center">
-        <div class="col col-md-10 text-right">
-            <button class="btn btn-shuffle" @onclick="e => ResetCards()">New Game</button>
-        </div>
-    </div>
-</div>
-
 <div class="container-fluid wrapper deck mb-5">
-    @foreach (var card in CardService.GetCards().OrderBy(card => card.Order))
-    {
-        <div class="@RenderMatchedClasslist(card.Code, card.Clickable)" data-value="@card.Value" data-code="@card.Code" @onclick="e => FlipCard(card)">
-            <div class="faces">
-                <div class="@RenderFaceCardClasslist(card.Code, card.Visible)"><img src="@card.FrontImage" /></div>
-                <div class="face back backon"></div>
+        @foreach (var card in CardService.GetCards().OrderBy(card => card.Order))
+        {
+            <div class="@RenderMatchedClasslist(card.Code, card.Clickable)" data-value="@card.Value" data-code="@card.Code" @onclick="e => FlipCard(card)">
+                <div class="faces">
+                    <div class="@RenderFaceCardClasslist(card.Code, card.Visible)"><img src="@card.FrontImage" /></div>
+                    <div class="face back backon"></div>
+                </div>
             </div>
-        </div>
-    }
-
+        }
 </div>
 
 @code {

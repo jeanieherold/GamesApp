@@ -6,11 +6,9 @@
 }
 
 <div class="container-fluid mb-4 pt-3 text-center">
-    <p>C# Memory Game - WIP</p>
     <h2 class="display-4">Memory Game</h2>
 </div>
 
-@(await Html.RenderComponentAsync<PlayerList>(RenderMode.ServerPrerendered))
 @(await Html.RenderComponentAsync<CardList>(RenderMode.ServerPrerendered))
 
 <script src="_framework/blazor.server.js"></script>

@@ -92,15 +92,26 @@ hr {
     border: none;
     text-transform: uppercase;
     font-size: 1rem;
-    border-radius: 100%;
-    height: 75px;
-    width: 75px;
+    border-radius: 50%;
+    border: 1px solid #dd8683;
     line-height: .9;
+    padding: 10px 20px;
 }
 
 .btn-shuffle:hover {
     color: #dd8683;
     border: 1px solid #dd8683;
+}
+
+
+/* Modal styles
+-------------------------------------------------- */
+.modal-content {
+    background-color: #2d3749;
+}
+
+.modal-content p {
+    font-size: 1.2rem;
 }
 
 
@@ -110,22 +121,17 @@ hr {
     margin: 0 auto;
 }
 
+
 /* Player Score Directions styles
 -------------------------------------------------- */
 .player-list {
     max-width: 600px;
     margin: 0 auto;
-    border: 1px solid #c4d7d1;
     padding: 1rem;
 }
 
 .player-list h4 {
     color: #dd8683;
-}
-
-.directions p {
-    margin-bottom: 0.25rem;
-    font-size: .8rem;
 }
 
 .new-game {
@@ -134,11 +140,13 @@ hr {
     padding: 1rem;
 }
 
+
 /* Memory Card styles
 -------------------------------------------------- */
 .deck {
     display: flex;
     align-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 1rem;
     /*    visibility: hidden;*/

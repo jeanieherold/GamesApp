@@ -5,10 +5,20 @@
 @using System.Collections;
 @using System.Collections.Generic;
 @using System.Text.Json;
+@inject JsonFileCardService CardService
 @inject JsonFilePlayerService PlayerService
 
 
 
+@foreach (var player in PlayerService.GetPlayers())
+{
+    <div class="container text-center mb-5 pt-5">
+        <h1 class="display-4">Welcome @player.UserName</h1>
+    </div>
+}
+
 @code {
+
+  
 
 }

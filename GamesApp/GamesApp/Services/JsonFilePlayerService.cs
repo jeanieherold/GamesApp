@@ -35,19 +35,20 @@ namespace GamesApp.Services
         }
 
         //add players
-        public void updatePlayer(string playerId, string username, int score)
+        public void AddUpdatePlayer(string playerId, string username, int score)
         {
             var players = GetPlayers();
 
             var query = players.First(x => x.Id == playerId);
 
-            if (query.UserName == null)
+            if (username == null)
             {
-                query.UserName = username;
-                query.Score = score;
+                query.UserName = "Player One";
             }
             else
             {
+                query.Id = playerId;
+                query.UserName = username;
                 query.Score = score;
             }
 
