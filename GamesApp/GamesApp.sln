@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.808.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesApp", "GamesApp\GamesApp.csproj", "{4230D551-1A66-4772-8A2B-BFD4F0C1CA64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryGameLibrary", "MemoryGameLibrary\MemoryGameLibrary.csproj", "{062776FE-AB71-4685-AA0A-6CD893A739EA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{4230D551-1A66-4772-8A2B-BFD4F0C1CA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4230D551-1A66-4772-8A2B-BFD4F0C1CA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4230D551-1A66-4772-8A2B-BFD4F0C1CA64}.Release|Any CPU.Build.0 = Release|Any CPU
-		{062776FE-AB71-4685-AA0A-6CD893A739EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{062776FE-AB71-4685-AA0A-6CD893A739EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{062776FE-AB71-4685-AA0A-6CD893A739EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{062776FE-AB71-4685-AA0A-6CD893A739EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

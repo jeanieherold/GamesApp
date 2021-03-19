@@ -16,8 +16,6 @@
     <Folder Include="Components\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MemoryGameLibrary\MemoryGameLibrary.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
+    <Content Remove="wwwroot\data\beginnercardset.json" />
   </ItemGroup>
 </Project>

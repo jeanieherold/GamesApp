@@ -158,6 +158,8 @@ hr {
     padding: 1rem;
     width: 80vw;
     height: 80vw;
+    max-width: 400px;
+    max-height: 400px;
     margin: 0 auto;
 }
 
@@ -165,6 +167,8 @@ hr {
     .deck {
         width: 70vw;
         height: 70vw;
+        max-width: 700px;
+        max-height: 700px;
     }
 }
 
