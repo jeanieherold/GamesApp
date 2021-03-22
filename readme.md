@@ -15,11 +15,11 @@
 ## Features
 
 * Home Page
-    * Pages/Index.cshtml/Index.cshtml.cs
+    * Pages/Index.cshtml (& corresponding Index.cshtml.cs)
         * Created a form to capture or update user info and store in the players.json data file
 
 * Memory Game Page
-    * Pages/Games/Memory.cshtml/Memory.cshtml.cs
+    * Pages/Games/Memory.cshtml (& correspoinding Memory.cshtml.cs)
         * Player UserName is pulled from data if user entered - else "Player One" shows
         * Player Score is updated as game progresses and matches are made
         * cards.json file is updated as game progresses and matches are made 
