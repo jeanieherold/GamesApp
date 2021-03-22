@@ -43,10 +43,12 @@
 
 * Services/Controllers 
     * Services/JsonFileCardService.cs
+        * Controllers/CardsController.cs
     * Services/JsonFilePlayerService.cs
-        * CardService and PlayerService to handle Serialize and Deserialize of cards.json and players.json
-        * Controller for Cards and Players
-        * Controller for both configured in Startup.cs file
+        * Controllers/PlayersController.cs
+    * CardService and PlayerService to handle Serialize and Deserialize of cards.json and players.json
+    * Controller for Cards and Players
+    * Controller for both configured in Startup.cs file
     * API for players : /players
     * API for cards : /cards
 
