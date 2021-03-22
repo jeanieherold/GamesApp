@@ -12,8 +12,14 @@
 3. Click Run
 4. You will be taken to Home Page where you can enter in your user info or Go directly to the Memory Game from top nav or link above the form. 
 
-## Features
+## Features that I implememted from the C# Project Requirements Document
+1. Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
+2. Read data from an external file, such as text, JSON, CSV, etc and use that data in your application
+3. Use a LINQ query to retrieve information from a data structure (such as a list or array) or file
+4. Implement a log that records errors, invalid inputs, or other important events and writes them to a text file
+5. User repeatedly performs actions - clicking on cards
 
+## Created the Following:
 * Home Page
     * Pages/Index.cshtml (& corresponding Index.cshtml.cs)
         * Created a form to capture or update user info and store in the players.json data file
