@@ -47,8 +47,8 @@
         * CardService and PlayerService to handle Serialize and Deserialize of cards.json and players.json
         * Controller for Cards and Players
         * Controller for both configured in Startup.cs file
-        * API for players : /players.json
-        * API for cards : /card.json
+    * API for players : /players
+    * API for cards : /cards
 
 * Assets in wwwroot
     * I created the css and image assets used. 
