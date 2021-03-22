@@ -8,7 +8,7 @@
 
 ## How to Run the App
 1. Clone or Download the repo
-2. Open in Visual Studio or preferred IDE for C#
+2. Open GamesApp.sln in Visual Studio or preferred IDE for C#
 3. Click Run
 4. You will be taken to Home Page where you can enter in your user info or Go directly to the Memory Game from top nav or link above the form. 
 
