@@ -17,7 +17,7 @@
 2. Read data from an external file, such as text, JSON, CSV, etc and use that data in your application
 3. Use a LINQ query to retrieve information from a data structure (such as a list or array) or file
 4. Implement a log that records errors, invalid inputs, or other important events and writes them to a text file
-5. User repeatedly performs actions - clicking on cards
+5. User repeatedly performs actions - clicking on cards, can open instructions and close them, can start a new game or edit their information. 
 
 ## Created the Following:
 * Home Page
