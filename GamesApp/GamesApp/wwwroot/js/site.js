@@ -3,31 +3,8 @@
 
 //// Write your Javascript code.
 
-//$(document).ready(function () {
+$(document).ready(function () {
 
-//    var sessionUsername;
-
-//    fetch('/players')
-//        .then(res => {
-//            console.log(res);
-//            if (!res.ok) {
-//                throw Error("Not OK");
-//            }
-//            return res.json();
-//        })
-//        .then(data => {
-//            console.log(data[0].userName);
-//            sessionUsername = data[0].userName;
-//            sessionStorage.setItem("username", sessionUsername);
-//        })   
-//        .catch (error => {
-//            console.log(error)
-//        });
-
-//    if (window.sessionStorage && window.sessionStorage.getItem(sessionUsername)) {
-//        $('#playerUsername').html(sessionUsername);
-//    }
-
-//});
+});
 
 
