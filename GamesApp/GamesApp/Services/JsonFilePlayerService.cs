@@ -35,7 +35,7 @@ namespace GamesApp.Services
         }
 
         //add players
-        public void AddUpdatePlayer(string playerId, string username, int score)
+        public void AddUpdatePlayerName(string playerId, string username)
         {
             var players = GetPlayers();
 
@@ -49,7 +49,6 @@ namespace GamesApp.Services
             {
                 query.Id = playerId;
                 query.UserName = username;
-                query.Score = score;
             }
 
             JsonSerializer(players, JsonFileName);

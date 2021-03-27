@@ -41,11 +41,10 @@ namespace GamesApp.Controllers
         [HttpGet]
         public ActionResult Get(
                 [FromQuery] string PlayerId,
-                [FromQuery] string UserName,
-                [FromQuery] int Score
+                [FromQuery] string UserName
             )
         {
-            PlayerService.AddUpdatePlayer(PlayerId, UserName, Score);
+            PlayerService.AddUpdatePlayerName(PlayerId, UserName);
             return Ok(); //return is a 200 ok and hides http from us
         }
 
