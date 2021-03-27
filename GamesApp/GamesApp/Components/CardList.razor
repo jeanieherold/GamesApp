@@ -79,7 +79,7 @@
     List<string> hideImgClasslist = new List<string>(new string[] { "face", "front", "hide" });
     List<string> memoryCardClasses = new List<string>(new string[] { "memory-card", "matched" });
     List<string> frontImgClasses = new List<string>();
-    string Message { get; set; }
+    string message { get; set; }
     List<Card> clickedCards = new List<Card>();
     int pointsEarned = 0;
 
@@ -130,10 +130,10 @@
                 PlayerService.updatePlayerScore("One", pointsEarned);
 
                 List<string> matchedImgClasslist = new List<string>(new string[] { "face", "front", "matched" });
-                foreach (var matchedcard in clickedCards)
+                foreach (var matchedCard in clickedCards)
                 {
-                    CardService.updateVisibilty(matchedcard.Code, matchedImgClasslist);
-                    CardService.updateClickable(matchedcard.Code, memoryCardClasses);
+                    CardService.updateVisibilty(matchedCard.Code, matchedImgClasslist);
+                    CardService.updateClickable(matchedCard.Code, memoryCardClasses);
 
                 }
             }
