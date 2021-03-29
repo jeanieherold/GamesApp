@@ -13,11 +13,12 @@
 4. You will be taken to Home Page where you can enter in your user info or Go directly to the Memory Game from top nav or link above the form. 
 
 ## Features that I implememted from the C# Project Requirements Document
-1. Card Services and Player Services use lists and populate it displaying User Info and Cards - reads and writes to these files as needed. 
-2. CardServices and PlayerServices reads data from an external file, such as text, JSON, CSV, etc and use that data in your application
-3. CardServices and Player Services use LINQ queries to retrieve information from a data structure (such as a list or array) or file
-4. CardServices and PlayerServices implement reading and writing important events and writes them to a text file
-5. User repeatedly performs actions - clicking on cards, can open instructions and close them, can start a new game or edit their information. 
+1. Player.cs and Card.cs in Models
+2. Card Services and Player Services use lists and populate data displaying User Info and Cards - reads and writes to these files as needed.
+3. CardServices and PlayerServices reads data from an external file, such as text, JSON, CSV, etc and use that data in your application
+4. CardServices and Player Services use LINQ queries to retrieve information from a data structure (such as a list or array) or file
+5. CardServices and PlayerServices implement reading and writing important events and writes them to a text file
+6. User repeatedly performs actions - clicking on cards, can open instructions and close them, can start a new game or edit their information. 
 
 ## Created the Following:
 * Home Page
