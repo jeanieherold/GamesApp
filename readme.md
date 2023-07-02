@@ -1,18 +1,18 @@
 
-# CSHARP ASP.NET Memory Game App 
+## CSHARP ASP.NET Memory Game App 
 * Code Louisville Project - Spring 2021 Razor/ Blazor Memory Game App
 
-## Using ASP.NET Razor Pages with Blazor Components (Pages, Models, Controllers, Services, Data)
+### Using ASP.NET Razor Pages with Blazor Components (Pages, Models, Controllers, Services, Data)
 
-## No Javascript was used for this project except the blazorserver js file and bootstrap js included in Razor pages
+### No Javascript was used for this project except the blazorserver js file and bootstrap js included in Razor pages
 
-## How to Run the App
+### How to Run the App
 1. Clone or Download the repo
 2. Open GamesApp.sln in Visual Studio or preferred IDE for C#
 3. Click Run
 4. You will be taken to Home Page where you can enter in your user info or Go directly to the Memory Game from top nav or link above the form. 
 
-## Features that I implememted from the C# Project Requirements Document
+### Features that I implememted from the C# Project Requirements Document
 1. Player.cs and Card.cs in Models
 2. Card Services and Player Services use lists and populate data displaying User Info and Cards - reads and writes to these files as needed.
 3. CardServices and PlayerServices reads data from an external file, such as text, JSON, CSV, etc and use that data in your application
@@ -20,7 +20,7 @@
 5. CardServices and PlayerServices implement reading and writing important events and writes them to a text file
 6. User repeatedly performs actions - clicking on cards, can open instructions and close them, can start a new game or edit their information. 
 
-## Created the Following:
+### Created the Following:
 * Home Page
     * Pages/Index.cshtml (& corresponding Index.cshtml.cs)
         * Created a form to capture or update user info and store in the players.json data file
