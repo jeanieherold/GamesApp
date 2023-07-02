@@ -2,9 +2,10 @@
 ## CSHARP ASP.NET Memory Game App 
 * Code Louisville Project - Spring 2021 Razor/ Blazor Memory Game App
 
-### Using ASP.NET Razor Pages with Blazor Components (Pages, Models, Controllers, Services, Data)
+### Using ASP.NET Razor Pages with Blazor Components
+* (Pages, Models, Controllers, Services, Data)
 
-### No Javascript was used for this project except the blazorserver js file and bootstrap js included in Razor pages
+#### No Javascript was used for this project except the blazorserver js file and bootstrap js included in Razor pages
 
 ### How to Run the App
 1. Clone or Download the repo
